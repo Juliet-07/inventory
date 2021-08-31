@@ -43,3 +43,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     elements: "#portfolio a.portfolio-box",
   });
 });
+
+// button
+const signUp = () =>{
+  document.querySelector(".btn")
+}

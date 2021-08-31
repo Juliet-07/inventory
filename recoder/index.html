@@ -1,227 +1,302 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="recordstyles.css" />
+    <link rel="stylesheet" href="../styling.css" />
+    <link rel="stylesheet" href="../admin/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <title>RECORD MANAGEMENT SYSTEM</title>
-    <link rel="stylesheet" href="recordstyles.css">
-    <link rel="stylesheet" href="../styling.css">
-    <link rel="stylesheet" href="../admin/styles.css">
-</head>
-<body>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
     <!-- NAV BAR -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
-        <a class="navbar-brand" href="#">RECORD MANAGEMENT SYSTEM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container px-4 px-lg-5">
-          <ul class="navbar-nav">
-            <li class="nav-item h3">
-              <a class="nav-link" href="#">Category</a>
-            </li>
-            <li class="nav-item h3">
-              <a class="nav-link" href="#">Amount</a>
-            </li>
-            <li class="nav-item h3">
-              <a class="nav-link" href="#">Date & Time</a>
-            </li> -->
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+    <nav class="navbar navbar-expand-lg navbar-light py-1">
+      <a class="navbar-brand" href="#">RECORD MANAGEMENT SYSTEM</a>
+    </nav>
+    <div class="container">
+      <table class="table table-borderless">
+        <thead>
+          <tr class="bg-primary text-white">
+            <th>CATEGORY</th>
+            <th>AMOUNT</th>
+            <th>DATE & TIME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Facials</button>
+                <div class="dropdown-content">
+                  <a href="#">Acne Maintenance</a>
+                  <a href="#">Dermaplaning Facials</a>
+                  <a href="#">Chemical Peel</a>
+                  <a href="#">Consultation & Analysis</a>
+                  <a href="#">Cynergy Facials</a>
+                  <a href="#">Gentlemen Facials</a>
+                  <a href="#">Gentlemen Microderma</a>
+                  <a href="#">Hydra Facials</a>
+                  <a href="#">Hydro Glow</a>
+                  <a href="#">Microneedling Facials</a>
+                </div>
               </div>
-            </li> -->
-          <!-- </ul>
-        </div>
-      </nav> -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
-        <a class="navbar-brand" href="#">RECORD MANAGEMENT SYSTEM</a>
-      </nav>
-        <div class="container">
-                <div class="dropdown">
-                  <button class="dropbtn">Facials</button>
-                  <div class="dropdown-content">
-                    <a href="./servicepage.html">Acne Maintenance</a>
-                    <a href="./servicepage.html">Dermaplaning Facials</a>
-                    <a href="./servicepage.html">Chemical Peel</a>
-                    <a href="./servicepage.html">Consultation & Analysis</a>
-                    <a href="./servicepage.html">Cynergy Facials</a>
-                    <a href="./servicepage.html">Gentlemen Facials</a>
-                    <a href="./servicepage.html">Gentlemen Microderma</a>
-                    <a href="./servicepage.html">Hydra Facials</a>
-                    <a href="./servicepage.html">Hydro Glow</a>
-                    <a href="./servicepage.html">Microneedling Facials</a>
-                    <!-- <a href="./servicepage.html">Microdermabrasion</a> -->
-                  </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Add-ons</button>
+                <div class="dropdown-content">
+                  <a href="#">Chin Twizing</a>
+                  <a href="#">Brow Tinting</a>
+                  <a href="#">Eyebrow Carving</a>
                 </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn">Add-ons</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Chin Twizing</a>
-                      <a href="./servicepage.html">Brow Tinting</a>
-                      <a href="./servicepage.html">Eyebrow Carving</a>
-                    </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Lashes</button>
+                <div class="dropdown-content">
+                  <a href="#">Classic</a>
+                  <a href="#">Hybrid</a>
+                  <a href="#">Volume</a>
+                  <a href="#">Mega Volume</a>
                 </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn">Lashes</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Classic</a>
-                      <a href="./servicepage.html">Hybrid</a>
-                      <a href="./servicepage.html">Volume</a>
-                      <a href="./servicepage.html">Mega Volume</a>
-                    </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">PMU, Make-up & Eyebrow</button>
+                <div class="dropdown-content">
+                  <a href="#">Microblading</a>
+                  <a href="#">Microshading</a>
+                  <a href="#">Combo Brows</a>
+                  <a href="#">Lip Blush</a>
                 </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn">PMU, Make-up & Eyebrow</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Microblading</a>
-                      <a href="./servicepage.html">Microshading</a>
-                      <a href="./servicepage.html">Combo Brows</a>
-                      <a href="./servicepage.html">Lip Blush</a>
-                    </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Waxing (Hair Removal)</button>
+                <div class="dropdown-content">
+                  <a href="#">Eyebrow</a>
+                  <a href="#">Upperlip</a>
+                  <a href="#">Chin</a>
+                  <a href="#">Full Face</a>
+                  <a href="#">Bikini</a>
+                  <a href="#">Underarm</a>
+                  <a href="#">Underarm + Underarm Facials</a>
+                  <a href="#">Brazillian</a>
+                  <a href="#">Halfleg</a>
+                  <a href="#">Snail Trail Full</a>
+                  <a href="#">Snail Trail Half</a>
+                  <a href="#">Full Leg</a>
+                  <a href="#">Half Leg</a>
+                  <a href="#">Full Arm</a>
+                  <a href="#">Half Arm</a>
+                  <a href="#">Half Back</a>
+                  <a href="#">Full Back</a>
+                  <a href="#">Full Tommy</a>
+                  <a href="#">Buttocks</a>
+                  <a href="#">Breast</a>
+                  <a href="#">Chest</a>
+                  <a href="#">Full Body Waxing</a>
+                  <a href="#">Vajacials</a>
+                  <a href="#">Vajacials + Brazillian Waxing</a>
+                  <a href="#">Underarm Facials</a>
                 </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn">Waxing (Hair Removal)</button>                                                   
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Eyebrow</a>
-                      <a href="./servicepage.html">Upperlip</a>
-                      <a href="./servicepage.html">Chin</a>
-                      <a href="./servicepage.html">Full Face</a>
-                      <a href="./servicepage.html">Bikini</a>
-                      <a href="./servicepage.html">Underarm</a>
-                      <a href="./servicepage.html">Underarm + Underarm Facials</a>
-                      <a href="./servicepage.html">Brazillian</a>
-                      <a href="./servicepage.html">Halfleg</a>
-                      <a href="./servicepage.html">Snail Trail Full</a>
-                      <a href="./servicepage.html">Snail Trail Half</a>
-                      <a href="./servicepage.html">Full Leg</a>
-                      <a href="./servicepage.html">Half Leg</a>
-                      <a href="./servicepage.html">Full Arm</a>
-                      <a href="./servicepage.html">Half Arm</a>
-                      <a href="./servicepage.html">Half Back</a>
-                      <a href="./servicepage.html">Full Back</a>
-                      <a href="./servicepage.html">Full Tommy</a>
-                      <a href="./servicepage.html">Buttocks</a>
-                      <a href="./servicepage.html">Breast</a>
-                      <a href="./servicepage.html">Chest</a>
-                      <a href="./servicepage.html">Full Body Waxing</a>
-                      <a href="./servicepage.html">Vajacials</a>
-                      <a href="./servicepage.html">Vajacials + Brazillian Waxing</a>
-                      <a href="./servicepage.html">Underarm Facials</a>
-                    </div>
-                  </div>
-                  
-                  <div class="dropdown">
-                    <button class="dropbtn">Laser Hair Removal</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Upperlip</a>
-                      <a href="./servicepage.html">Chin</a>
-                      <a href="./servicepage.html">Full Face</a>
-                      <a href="./servicepage.html">Underarm</a>
-                      <a href="./servicepage.html">Tummy Trail</a>
-                      <a href="./servicepage.html">Brazillian</a>
-                      <a href="./servicepage.html">Half Leg</a>
-                      <a href="./servicepage.html">Full Leg</a>
-                      <a href="./servicepage.html">Half Arm</a>
-                      <a href="./servicepage.html">Full Arm</a>
-                      <a href="./servicepage.html">Full Back</a>
-                      <a href="./servicepage.html">Lower/Upper Back</a>
-                      <a href="./servicepage.html">Full Front Chest</a>
-                      <a href="./servicepage.html">Shoulders</a>
-                      <a href="./servicepage.html">Breast</a>
-                      <a href="./servicepage.html">Hand & Finger</a>
-                      <a href="./servicepage.html">Full Body</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Teeth Whitening</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Teeth Whitening (4 shades)</a>
-                      <a href="./servicepage.html">Teeth Whitening (8 shades)</a>
-                      <a href="./servicepage.html">Add Scaling & Polishing</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Foot & Hand Care</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Express Manicure</a>
-                      <a href="./servicepage.html">Express Pedicure</a>
-                      <a href="./servicepage.html">Classic Manicure</a>
-                      <a href="./servicepage.html">Classic Pedicure</a>
-                      <a href="./servicepage.html">Jelly Pedicure</a>
-                      <a href="./servicepage.html">Herbal Aromatherapy Pedicure</a>
-                      <a href="./servicepage.html">Nail Polish</a>
-                      <a href="./servicepage.html">Gel Polish</a>
-                      <a href="./servicepage.html">Gel Polish Acrylic Removal</a>
-                      <a href="./servicepage.html">Acrylic Nail Removal Facials</a>
-                      <a href="./servicepage.html">Stick On Removal</a>
-                      <a href="./servicepage.html"> Nail Extensions</a>
-                      <a href="./servicepage.html">Foot Bath</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Massage</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Reflexology</a>
-                      <a href="./servicepage.html">Hot Stone</a>
-                      <a href="./servicepage.html">Swedish</a>
-                      <a href="./servicepage.html">Deep Tissue</a>
-                      <a href="./servicepage.html">Deep Tissue</a>
-                      <a href="./servicepage.html">Pregnancy</a>
-                      <a href="./servicepage.html">Thai Massage</a>
-                      <a href="./servicepage.html">Cupping</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Buttocks & Breast Lifts</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Breast</a>
-                      <a href="./servicepage.html">Butt</a>
-                      <a href="./servicepage.html">Hips</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Skin Tightening Treatment</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Face</a>
-                      <a href="./servicepage.html">Face + Neck</a>
-                      <a href="./servicepage.html">Neck + Chin</a>
-                      <a href="./servicepage.html">Lowerface + Chin</a>
-                      <a href="./servicepage.html">FOrhead</a>
-                      <a href="./servicepage.html">Eyes</a>
-                      <a href="./servicepage.html">Forhead + Eyes</a>
-                      <a href="./servicepage.html">Hands</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Body Sculpting & Skin Tightening</button>
-                    <div class="dropdown-content">
-                      <a href="./servicepage.html">Full Abdomen</a>
-                      <a href="./servicepage.html">Lower Abdomen</a>
-                      <a href="./servicepage.html">Handles</a>
-                      <a href="./servicepage.html">Abdomen + Handles</a>
-                      <a href="./servicepage.html">Upperback</a>
-                      <a href="./servicepage.html">Full Arm</a>
-                      <a href="./servicepage.html">BBL + Thighs</a>
-                      <a href="./servicepage.html">Lower Leg</a>
-                      <a href="./servicepage.html">Breast Lift</a>
-                      <a href="./servicepage.html">Sauna Body Warp</a>
-                      <a href="./servicepage.html">Breast Enhancement</a>
-                      <a href="./servicepage.html">Butt Enhancement</a>
-                    </div>
-                  </div>
-                </div>  
-        </div>
-</body>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Laser Hair Removal</button>
+                <div class="dropdown-content">
+                  <a href="#">Upperlip</a>
+                  <a href="#">Chin</a>
+                  <a href="#">Full Face</a>
+                  <a href="#">Underarm</a>
+                  <a href="#">Tummy Trail</a>
+                  <a href="#">Brazillian</a>
+                  <a href="#">Half Leg</a>
+                  <a href="#">Full Leg</a>
+                  <a href="#">Half Arm</a>
+                  <a href="#">Full Arm</a>
+                  <a href="#">Full Back</a>
+                  <a href="#">Lower/Upper Back</a>
+                  <a href="#">Full Front Chest</a>
+                  <a href="#">Shoulders</a>
+                  <a href="#">Breast</a>
+                  <a href="#">Hand & Finger</a>
+                  <a href="#">Full Body</a>
+                </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Teeth Whitening</button>
+                <div class="dropdown-content">
+                  <a href="#">Teeth Whitening (4 shades)</a>
+                  <a href="#">Teeth Whitening (8 shades)</a>
+                  <a href="#">Add Scaling & Polishing</a>
+                </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Foot & Hand Care</button>
+                <div class="dropdown-content">
+                  <a href="#">Express Manicure</a>
+                  <a href="#">Express Pedicure</a>
+                  <a href="#">Classic Manicure</a>
+                  <a href="#">Classic Pedicure</a>
+                  <a href="#">Jelly Pedicure</a>
+                  <a href="#">Herbal Aromatherapy Pedicure</a>
+                  <a href="#">Nail Polish</a>
+                  <a href="#">Gel Polish</a>
+                  <a href="#">Gel Polish Acrylic Removal</a>
+                  <a href="#">Acrylic Nail Removal Facials</a>
+                  <a href="#">Stick On Removal</a>
+                  <a href="#"> Nail Extensions</a>
+                  <a href="#">Foot Bath</a>
+                </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Massage</button>
+                <div class="dropdown-content">
+                  <a href="#">Reflexology</a>
+                  <a href="#">Hot Stone</a>
+                  <a href="#">Swedish</a>
+                  <a href="#">Deep Tissue</a>
+                  <a href="#">Deep Tissue</a>
+                  <a href="#">Pregnancy</a>
+                  <a href="#">Thai Massage</a>
+                  <a href="#">Cupping</a>
+                </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Buttocks & Breast Lifts</button>
+                <div class="dropdown-content">
+                  <a href="#">Breast</a>
+                  <a href="#">Butt</a>
+                  <a href="#">Hips</a>
+                </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+          <tr>
+            <td>
+              <div class="dropdown">
+                <button class="dropbtn">Skin Tightening Treatment</button>
+                <div class="dropdown-content">
+                  <a href="#">Face</a>
+                  <a href="#">Face + Neck</a>
+                  <a href="#">Neck + Chin</a>
+                  <a href="#">Lowerface + Chin</a>
+                  <a href="#">Forehead</a>
+                  <a href="#">Eyes</a>
+                  <a href="#">Forhead + Eyes</a>
+                  <a href="#">Hands</a>
+                </div>
+              </div>
+            </td>
+            <td>Filled from backend</td>
+            <td>Filled from backend</td>
+            <td>
+              <button class="dropbtn" type="button">Submit</button>
+            </td>
+          </tr>
+          <!-- Next -->
+        </tbody>
+      </table>
+    </div>
+    <script src="record.js"></script>
+  </body>
 </html>
