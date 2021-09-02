@@ -94,7 +94,10 @@ hr:not([size]) {
 .tab button:hover {
   background-color: #ddd;
 }
-
+.logo{
+  width: 70px;
+  height: 70px;
+}
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
