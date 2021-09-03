@@ -26,14 +26,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./table/table.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="sidebar" data-color="purple" data-background-color="white">
         <div class="logo">
-          <a href="#" class="simple-text logo-normal">
-            Spa Services
-          </a>
+          <a href="#" class="simple-text logo-normal"> Spa Services </a>
         </div>
         <div class="sidebar-wrapper">
           <ul class="nav">
@@ -62,11 +61,11 @@
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./report.html">
-                  <i class="material-icons">report</i>
-                  <p>Report</p>
-                </a>
-              </li>
+              <a class="nav-link" href="./report.html">
+                <i class="material-icons">report</i>
+                <p>Report</p>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -86,12 +85,69 @@
           <div class="container-fluid">
             <div class="card">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Table lsit of all registrered employees</h4>
+                <h4 class="card-title">
+                  Table lsit of all registrered employees
+                </h4>
                 <!-- <p class="card-category">Created using Roboto Font Family</p> -->
               </div>
               <div class="card-body">
-                  <h1>Table here</h1>
+                <!-- <h1>Table here</h1> -->
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="text-primary">
+                      <th>ID</th>
+                      <th>Name of Employees</th>
+                      <th>Email</th>
+                      <th>Make Admin</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Damon Salvathores</td>
+                        <td>damon@gmail.com</td>
+                        <td>
+                          <button class="dropbtn" type="button">
+                            Make Admin
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- Next -->
+                      <tr>
+                        <td>2</td>
+                        <td>Elena Gilbert</td>
+                        <td>elena@gmail.com</td>
+                        <td>
+                          <button class="dropbtn" type="button">
+                            Make Admin
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- Next -->
+                      <tr>
+                        <td>3</td>
+                        <td>Sage Rodriguez</td>
+                        <td>sage@gmail.com</td>
+                        <td>
+                          <button class="dropbtn" type="button">
+                            Make Admin
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- Next -->
+                      <tr>
+                        <td>4</td>
+                        <td>Philip Chaney</td>
+                        <td>philip@gmail.com</td>
+                        <td>
+                          <button class="dropbtn" type="button">
+                            Make Admin
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+              </div>
             </div>
           </div>
         </div>
