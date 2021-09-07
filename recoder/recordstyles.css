@@ -18,9 +18,19 @@ body {
   padding: 20px !important;
   background: none;
 }
-.container{
+.container {
   padding-top: 5rem;
   padding-bottom: calc(10rem - 4.5rem);
+}
+.container form {
+  /* background-color: red; */
+  position: absolute;
+  /* width: auto; */
+  height: 30vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 .categoryList {
   list-style-type: none;
@@ -32,12 +42,26 @@ body {
   background-color: #e4ae71;
   padding: 5px;
 }
+.label {
+  padding: 16px;
+  font-size: 16px;
+  color: #fff;
+}
+.selectButton {
+  background-color: #f4623a;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-top: 30px;
+}
 .button {
-  border:solid 1px #fff;
-  border-radius: 200%;
+  border: solid 1px #fff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
   color: #fff;
   background-color: #f4623a;
-  margin:10%;
 }
 /* HOVER DROPDOWN STYLING */
 .dropbtn {
