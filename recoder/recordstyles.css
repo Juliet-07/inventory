@@ -63,6 +63,11 @@ body {
   color: #fff;
   background-color: #f4623a;
 }
+.list{
+  color: #fff;
+  list-style-type: none;
+  /* display: inline-block; */
+}
 /* HOVER DROPDOWN STYLING */
 .dropbtn {
   background-color: #f4623a;
