@@ -68,6 +68,14 @@ body {
   list-style-type: none;
   /* display: inline-block; */
 }
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  /* background-color: blueviolet; */
+}
 /* HOVER DROPDOWN STYLING */
 .dropbtn {
   background-color: #f4623a;
