@@ -5,7 +5,6 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="recordstyles.css" />
     <link rel="stylesheet" href="../styling.css" />
-    <!-- <link rel="stylesheet" href="../admin/styles.css" /> -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,316 +26,352 @@
     <nav class="navbar navbar-expand-lg navbar-light py-1">
       <div class="container px-4 py-0">
         <a class="navbar-brand text-white" href="#">RECORD MANAGEMENT SYSTEM</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="list.html">List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./servicepage.php"
+                >Records</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="logout.php">Logout</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+    <div class="img">
+      <a class="navbar-brand" href="../index.html">
+        <img class="logo rounded-circle" src="../assets/logo.jpeg" alt="" />
+      </a>
+    </div>
     <div class="container">
-      <div class="img">
-        <a class="navbar-brand" href="../index.html">
-        <img
-          class="logo rounded-circle"
-          src="../assets/logo.jpeg"
-          alt=""
-        />
-        </a>
-      </div>
       <table class="table">
         <thead>
           <tr class="bg-primary text-white">
             <th>CATEGORY</th>
+            <th>SERVICE</th>
             <th>PRICE</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <div class="dropdown">
-                <button class="dropbtn">Add-ons</button>
-                <div class="dropdown-content">
-                  <a href="#">Brow Tinting</a>
-                  <a href="#">Chin Twizing</a>
-                  <a href="#">Eyebrow Carving</a>
-                </div>
-              </div>
+              <div class="dropbtn">Add-ons</div>
             </td>
-            <td>Filled from backend</td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Add-ons">
+                    <option>Brow Tinting</option>
+                    <option>Chin Twizing</option>
+                    <option>Eyebrow Carving</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
             <td>
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Body Sculpting & Skin Tightening
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">Abdomen + Handles</a>
-                  <a href="#">BBL + Thighs</a>
-                  <a href="#">Breast Enhancement</a>
-                  <a href="#">Breast Lift</a>
-                  <a href="#">Butt Enhancement</a>
-                  <a href="#">Full Abdomen</a>
-                  <a href="#">Full Arm</a>
-                  <a href="#">Handles</a>
-                  <a href="#">Lower Abdomen</a>
-                  <a href="#">Upper Back (Bra Back)</a>
-                  <a href="#">Sauna Body Wrap</a>
-                </div>
-              </div>
+              <div class="dropbtn">Body Sculpting & Skin Tightening</div>
             </td>
-            <td>Filled from backend</td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Body Sculpting & Skin Tightening">
+                    <option>Abdomen + Handles</option>
+                    <option>BBL + Thighs</option>
+                    <option>Breast Enhancement</option>
+                    <option>Breast Lift</option>
+                    <option>Butt Enhancement</option>
+                    <option>Full Abdomen</option>
+                    <option>Full Arm</option>
+                    <option>Handles</option>
+                    <option>Lower Abdomen</option>
+                    <option>Sauna Body Wrap</option>
+                    <option>Upper Back (Bra Back)</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Buttocks & Breast Lifts</button>
-                <div class="dropdown-content">
-                  <a href="#">Breast</a>
-                  <a href="#">Butt</a>
-                  <a href="#">Hips</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Buttocks & Breast Lifts</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Buttocks & Breast Lifts">
+                    <option>Breast</option>
+                    <option>Butt</option>
+                    <option>Hips</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Facials</button>
-                <div class="dropdown-content">
-                  <a href="#">Acne Maintenance</a>
-                  <a href="#">Dermaplaning Facials</a>
-                  <a href="#">Chemical Peel</a>
-                  <a href="#">Consultation & Analysis</a>
-                  <a href="#">Cynergy Facials</a>
-                  <a href="#">Gentlemen Facials</a>
-                  <a href="#">Gentlemen Microderma</a>
-                  <a href="#">Hydra Facials</a>
-                  <a href="#">Hydro Glow</a>
-                  <a href="#">Microneedling Facials</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Facials</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Facials">
+                    <option>Acne Maintenance</option>
+                    <option>Dermaplaning Facials</option>
+                    <option>Chemical Peel</option>
+                    <option>Consultation & Analysis</option>
+                    <option>Cynergy Facials</option>
+                    <option>Gentlemen Facials</option>
+                    <option>Gentlemen Microderma</option>
+                    <option>Hydra Facials</option>
+                    <option>Hydro Glow</option>
+                    <option>Microneedling Facials</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Foot & Hand Care</button>
-                <div class="dropdown-content">
-                  <a href="#">Acrylic Nail Removal Facials</a>
-                  <a href="#">Classic Manicure</a>
-                  <a href="#">Classic Pedicure</a>
-                  <a href="#">Express Manicure</a>
-                  <a href="#">Express Pedicure</a>
-                  <a href="#">Foot Bath</a>
-                  <a href="#">Gel Polish Acrylic Removal</a>
-                  <a href="#">Gel Polish</a>
-                  <a href="#">Herbal Aromatherapy Pedicure</a>
-                  <a href="#">Jelly Pedicure</a>
-                  <a href="#"> Nail Extensions</a>
-                  <a href="#">Nail Polish</a>
-                  <a href="#">Stick On Removal</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Foot & Hand Care</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Foot & Hand Care">
+                    <option>Acrylic Nail Removal Facials</option>
+                    <option>Classic Manicure</option>
+                    <option>Classic Pedicure</option>
+                    <option>Express Manicure</option>
+                    <option>Express Pedicure</option>
+                    <option>Foot Bath</option>
+                    <option>Gel Polish Acrylic Removal</option>
+                    <option>Gel Polish</option>
+                    <option>Herbal Aromatherapy Pedicure</option>
+                    <option>Jelly Pedicure</option>
+                    <option>Nail Extensions</option>
+                    <option>Nail Polish</option>
+                    <option>Stick On Removal</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Laser Hair Removal</button>
-                <div class="dropdown-content">
-                  <a href="#">Brazillian</a>
-                  <a href="#">Breast</a>
-                  <a href="#">Chin</a>
-                  <a href="#">Full Arm</a>
-                  <a href="#">Full Back</a>
-                  <a href="#">Full Body</a>
-                  <a href="#">Full Face</a>
-                  <a href="#">Full Front Chest</a>
-                  <a href="#">Full Leg</a>
-                  <a href="#">Half Arm</a>
-                  <a href="#">Half Leg</a>
-                  <a href="#">Hand & Finger</a>
-                  <a href="#">Lower/Upper Back</a>
-                  <a href="#">Shoulders</a>
-                  <a href="#">Tummy Trail</a>
-                  <a href="#">Underarm</a>
-                  <a href="#">Upperlip</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Laser Hair Removal</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Laser Hair Removal"></optgroup>
+                  <option>Brazillian</option>
+                  <option>Breast</option>
+                  <option>Chin</option>
+                  <option>Full Arm</option>
+                  <option>Full Back</option>
+                  <option>Full Body</option>
+                  <option>Full Face</option>
+                  <option>Full Front Chest</option>
+                  <option>Full Leg</option>
+                  <option>Half Arm</option>
+                  <option>Half Leg</option>
+                  <option>Hand & Finger</option>
+                  <option>Lower/Upper Back</option>
+                  <option>Shoulders</option>
+                  <option>Tummy Trail</option>
+                  <option>Underarm</option>
+                  <option>Upperlip</option>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Lashes</button>
-                <div class="dropdown-content">
-                  <a href="#">Classic</a>
-                  <a href="#">Hybrid</a>
-                  <a href="#">Mega Volume</a>
-                  <a href="#">Volume</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Lashes</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <option>Classic</option>
+                  <option>Hybrid</option>
+                  <option>Mega Volume</option>
+                  <option>Volume</option>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Massage</button>
-                <div class="dropdown-content">
-                  <a href="#">Cupping</a>
-                  <a href="#">Deep Tissue</a>
-                  <a href="#">Hot Stone</a>
-                  <a href="#">Pregnancy</a>
-                  <a href="#">Swedish</a>
-                  <a href="#">Thai Massage</a>
-                  <dl>
-                    <dt>Reflexology</dt>
-                    <dd><a href="#">Full Back</a></dd>
-                    <dd><a href="#">Hand</a></dd>
-                    <dd><a href="#">Head</a></dd>
-                    <dd><a href="#">Leg Relief</a></dd>
-                    <dd><a href="">Neck & Shoulders</a></dd>
-                  </dl>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Massage</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <option>Cupping</option>
+                  <option>Deep Tissue</option>
+                  <option>Hot Stone</option>
+                  <option>Pregnancy</option>
+                  <option>Swedish</option>
+                  <option>Thai Massage</option>
+                  <!-- <dl>
+                       <dt>Reflexology</dt>
+                       <dd><option>Full Back</option></dd>
+                       <dd><option>Hand</option></dd>
+                       <dd><option>Head</option></dd>
+                       <dd><option>Leg Relief</option></dd>
+                       <dd><a href="">Neck & Shoulders</option></dd>
+                     </dl> -->
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">PMU, Make-up & Eyebrow</button>
-                <div class="dropdown-content">
-                  <a href="#">Combo Brows</a>
-                  <a href="#">Lip Blush</a>
-                  <a href="#">Microblading</a>
-                  <a href="#">Microshading</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">PMU, Make-up & Eyebrow</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="PMU, Make-up & Eyebrow">
+                    <option>Combo Brows</option>
+                    <option>Lip Blush</option>
+                    <option>Microblading</option>
+                    <option>Microshading</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
+            <td><div class="dropbtn">Skin Tightening Treatment</div></td>
+            <form></form>
             <td>
-              <div class="dropdown">
-                <button class="dropbtn">Skin Tightening Treatment</button>
-                <div class="dropdown-content">
-                  <a href="#">Eyes</a>
-                  <a href="#">Face</a>
-                  <a href="#">Face + Neck</a>
-                  <a href="#">Forehead</a>
-                  <a href="#">Forhead + Eyes</a>
-                  <a href="#">Hands</a>
-                  <a href="#">Lowerface + Chin</a>
-                  <a href="#">Neck + Chin</a>
-                </div>
-              </div>
+              <select name="services" class="selectButton">
+                <optgroup label="Skin Tightening Treatment">
+                  <option>Eyes</option>
+                  <option>Face</option>
+                  <option>Face + Neck</option>
+                  <option>Forehead</option>
+                  <option>Forhead + Eyes</option>
+                  <option>Hands</option>
+                  <option>Lowerface + Chin</option>
+                  <option>Neck + Chin</option>
+                </optgroup>
+              </select>
             </td>
-            <td>Filled from backend</td>
+            <td><input type="number" /></td>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Skin Treatment</button>
-                <div class="dropdown-content">
-                  <a href="#">Anti-aging Body Treatment</a>
-                  <a href="#">Body Steaming</a>
-                  <a href="#">Brightening Body Polish</a>
-                  <a href="#">Brightening Body Polish with Steaming</a>
-                  <a href="#">Full Body Detox and Body Wrap</a>
-                  <a href="#">Stretchmark Treatment</a>
-                  <dl>
-                    <dt>Body Acne Treatment</dt>
-                    <dd><a href="#">Arm</a></dd>
-                    <dd><a href="#">Back</a></dd>
-                    <dd><a href="#">Chest</a></dd>
-                    <dd><a href="#">Full Body</a></dd>
-                    <dd><a href="">Legs</a></dd>
-                    <dd><a href="">Thighs</a></dd>
-                  </dl>
-                  <dl>
-                    <dt>Body Brasion (Microdermabrasion)</dt>
-                    <dd><a href="#">Abdomen</a></dd>
-                    <dd><a href="#">Chest</a></dd>
-                    <dd><a href="#">Décolleté</a></dd>
-                    <dd><a href="#">Full Arm right or left</a></dd>
-                    <dd><a href="">Full Back</a></dd>
-                    <dd><a href="">Legs</a></dd>
-                    <dd><a href="">Left upper arm or lower arm</a></dd>
-                    <dd><a href="">Left upper leg or lower leg</a></dd>
-                    <dd><a href="">Right upper arm or lower arm</a></dd>
-                    <dd><a href="">Thighs</a></dd>
-                    <dd><a href="">Upper or lower back</a></dd>
-                  </dl>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Skin Treatment</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Skin Treatment">
+                    <option>Anti-aging Body Treatment</option>
+                    <option>Body Steaming</option>
+                    <option>Brightening Body Polish</option>
+                    <option>Brightening Body Polish with Steaming</option>
+                    <option>Full Body Detox and Body Wrap</option>
+                    <option>Stretchmark Treatment</option>
+                    <!-- <option>
+                      <dl>
+                        <dt>Body Acne Treatment</dt>
+                        <dd><a href="#">Arm</a></dd>
+                        <dd><a href="#">Back</a></dd>
+                        <dd><a href="#">Chest</a></dd>
+                        <dd><a href="#">Full Body</option></dd>
+                        <dd><a href="#">Legs</a></dd>
+                        <dd><a href="#">Thighs</a></dd>
+                      </dl>
+                    </option> -->
+                    <!-- <option>
+                      <dl>
+                        <dt>Body Brasion (Microdermabrasion)</dt>
+                        <dd><a href="#">Abdomen</a></dd>
+                        <dd><a href="#">Chest</a></dd>
+                        <dd><a href="#">Décolleté</a></dd>
+                        <dd><a href="#">Full Arm right or left</a></dd>
+                        <dd><a href="#">Full Back</a></dd>
+                        <dd><a href="#">Legs</a></dd>
+                        <dd><a href="#">Left upper arm or lower arm</a></dd>
+                        <dd><a href="#">Left upper leg or lower leg</a></dd>
+                        <dd><a href="#">Right upper arm or lower arm</a></dd>
+                        <dd><a href="#">Thighs</a></dd>
+                        <dd><a href="#">Upper or lower back</a></dd>
+                      </dl>
+                    </option> -->
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Teeth Whitening</button>
-                <div class="dropdown-content">
-                  <a href="#">Add Scaling & Polishing</a>
-                  <a href="#">Teeth Whitening (4 shades)</a>
-                  <a href="#">Teeth Whitening (8 shades)</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Teeth Whitening</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <option>Add Scaling & Polishing</option>
+                  <option>Teeth Whitening (4 shades)</option>
+                  <option>Teeth Whitening (8 shades)</option>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
           <!-- Next -->
           <tr>
-            <td>
-              <div class="dropdown">
-                <button class="dropbtn">Waxing (Hair Removal)</button>
-                <div class="dropdown-content">
-                  <a href="#">Bikini</a>
-                  <a href="#">Brazillian</a>
-                  <a href="#">Breast</a>
-                  <a href="#">Buttocks</a>
-                  <a href="#">Chest</a>
-                  <a href="#">Chin</a>
-                  <a href="#">Eyebrow</a>
-                  <a href="#">Full Arm</a>
-                  <a href="#">Full Back</a>
-                  <a href="#">Full Body Waxing</a>
-                  <a href="#">Full Face</a>
-                  <a href="#">Full Leg</a>
-                  <a href="#">Full Tommy</a>
-                  <a href="#">Half Arm</a>
-                  <a href="#">Half Back</a>
-                  <a href="#">Half Leg</a>
-                  <a href="#">Snail Trail Full</a>
-                  <a href="#">Snail Trail Half</a>
-                  <a href="#">Underarm</a>
-                  <a href="#">Underarm Facials</a>
-                  <a href="#">Underarm + Underarm Facials</a>
-                  <a href="#">Upperlip</a>
-                  <a href="#">Vajacials</a>
-                  <a href="#">Vajacials + Brazillian Waxing</a>
-                </div>
-              </div>
-            </td>
-            <td>Filled from backend</td>
+            <td><div class="dropbtn">Waxing (Hair Removal)</div></td>
+            <form>
+              <td>
+                <select name="services" class="selectButton">
+                  <optgroup label="Waxing (Hair Removal)">
+                    <option>Bikini</option>
+                    <option>Brazillian</option>
+                    <option>Breast</option>
+                    <option>Buttocks</option>
+                    <option>Chest</option>
+                    <option>Chin</option>
+                    <option>Eyebrow</option>
+                    <option>Full Arm</option>
+                    <option>Full Back</option>
+                    <option>Full Body Waxing</option>
+                    <option>Full Face</option>
+                    <option>Full Leg</option>
+                    <option>Full Tommy</option>
+                    <option>Half Arm</option>
+                    <option>Half Back</option>
+                    <option>Half Leg</option>
+                    <option>Snail Trail Full</option>
+                    <option>Snail Trail Half</option>
+                    <option>Underarm</option>
+                    <option>Underarm Facials</option>
+                    <option>Underarm + Underarm Facials</option>
+                    <option>Upperlip</option>
+                    <option>Vajacials</option>
+                    <option>Vajacials + Brazillian Waxing</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td><input type="number" /></td>
+            </form>
           </tr>
+          <!-- Button -->
           <tr>
-            <!-- <td></td> -->
+            <td></td>
             <td>
               <button class="dropbtn" type="button">Submit</button>
             </td>

@@ -5,6 +5,27 @@
   padding: 16px;
   font-size: 16px;
   border: none;
+  width: max-content;
+}
+.dropbtn1 {
+  background-color: #ab47bc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.label {
+  padding: 16px;
+  font-size: 16px;
+  color: #fff;
+}
+.selectButton {
+  background-color: #ab47bc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-top: 0px;
 }
 .dropdown {
   position: relative;
